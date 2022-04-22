@@ -1,0 +1,5 @@
+class Solution:
+    def containsDuplicate(self, nums: List[int]) -> bool:
+        
+        counter = Counter(nums)
+        return any([True for i in counter if counter[i]>1])
